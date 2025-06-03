@@ -318,7 +318,7 @@
 .footer_top .link_list .link_open.on { border-bottom-left-radius: 0; border-bottom-right-radius: 0; } 
 .footer_top .link_list .link_open.on::before { transform: scaleY(-1); } 
 
-.footer_top .link_list ul { visibility: hidden; position: absolute; top: 100%; left: 0; width: 100%; padding: 10px 10px; border: 1px solid transparent; border-radius: 15px; box-sizing: border-box; transition: .3s ease-in-out; opacity: 0; } 
+.footer_top .link_list ul { visibility: hidden; position: absolute; top: 100%; left: 0; width: 100%; padding: 10px 10px; border: 1px solid transparent; border-radius: 15px; box-sizing: border-box; transition: .3s ease-in-out; opacity: 0; z-index: 20; } 
 .footer_top .link_list li a { display: block; color: #292929; font-size: 16px; font-weight: 300; line-height: 0; transition: .3s ease-in-out; transition-property: line-height, padding; } 
 .footer_top .link_list li a:hover { font-weight: 600; } 
 .footer_top .link_list ul.active { visibility: visible; border-top-left-radius: 0; border-top-right-radius: 0; opacity: 1; } 
