@@ -6,13 +6,14 @@
   width: 1600px;
   margin: 0 auto;
 }
+#container {overflow: hidden;}
+
 @media (max-width: 1600px) {
   .wrap { width: 1200px;}
 }
 @media (max-width: 1200px) {
   .wrap { width: 94vw;}
 }
-body {height: 6000px; background-color: #4fd7c2;}
 
 /* header */
 #header {
@@ -24,6 +25,7 @@ body {height: 6000px; background-color: #4fd7c2;}
   background-color: transparent;
   transform: translateX(-50%);
   transition: top .3s ease-in-out;
+  z-index: 9999;
 }
 #header::before {
   content: "";

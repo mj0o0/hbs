@@ -85,22 +85,31 @@ $(function (){
 
 // pc 메뉴 펼치기 
 $(document).on('click', '.depth_text', function(e) {
-  const $item = $(this).parent();
+
+  const $item =$(this).closest('.depth1_item');
   const husSubMenu = $item.hasClass('has');
-  const isAcative = $item.hasClass('active');
-  const isDepth2 = $(this).hasClass('depth2_text');
   const isPc = window.innerWidth > 1200;
+
 
   if (!husSubMenu) return; // 하위 메뉴가 없다면
 
   e.preventDefault(); // a 태그 클릭시 페이지 이동 막음
 
-  if (isPc && isDepth2) {
-    $('.depth2_item').removeClass('active');
-    if (!isAcative) $item.addClass('active');
-  } else if (!isPc){
-    $('.depth2_item').removeClass('active');
-    if (!isAcative) $item.addClass('active').siblings().removeClass('active');
+
+  // depth2가 없는 경우 그냥 통과
+  if (!husSubMenu) return;
+
+  // 모바일에서만 토글
+  if (!isPc) {
+    e.preventDefault();//링크 이동 방지
+  }
+
+  // 열려 있으면 닫고, 아니면 열고
+  if ($item.hasClass('active')) {
+    $item.removeClass('active')
+  } else {
+    $('.depth_item').removeClass('active')
+    $item.addClass('active')
   }
 
 });
