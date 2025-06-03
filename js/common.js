@@ -38,7 +38,6 @@ $(function(){
         $(this).addClass('has')
       }
     })
-  });
 
 });
   // 맨 위인지 판단
@@ -83,24 +82,20 @@ $(function (){
     }
   );
 
-// pc 메뉴 펼치기 
+// pc 메뉴 클릭시 서브 메뉴 열기/닫기 
 $(document).on('click', '.depth_text', function(e) {
 
-  const $item =$(this).closest('.depth1_item');
-  const husSubMenu = $item.hasClass('has');
+  const $this =$(this);
+  const $item = $this.closest('.depth1_item');
+  const hasSubMenu = $item.hasClass('has');
   const isPc = window.innerWidth > 1200;
+  const href = $this.attr('href');
+  
 
-
-  if (!husSubMenu) return; // 하위 메뉴가 없다면
-
-  e.preventDefault(); // a 태그 클릭시 페이지 이동 막음
-
-
-  // depth2가 없는 경우 그냥 통과
-  if (!husSubMenu) return;
+  if (hasSubMenu) {
 
   // 모바일에서만 토글
-  if (!isPc) {
+  if (!isPc && href === '#') {
     e.preventDefault();//링크 이동 방지
   }
 
@@ -111,7 +106,7 @@ $(document).on('click', '.depth_text', function(e) {
     $('.depth_item').removeClass('active')
     $item.addClass('active')
   }
-
+ }
 });
 
 // 키보드 진입/이탈 시 gnb 열기/닫기
@@ -127,10 +122,12 @@ $(document)
   $('.menu_open').on('click', () => {
     $('html').addClass('gnb_open')
   });
-  });
   $('.menu_close').on('click', () => {
-  $('html').removeClass('gnb_open');
-  $('.depth_item').removeClass('active')
+    $('html').removeClass('gnb_open');
+    $('.depth_item').removeClass('active')
   });
+  });
+
+});
 
 
