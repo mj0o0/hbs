@@ -4,7 +4,7 @@ $(function(){
   let lang = $('html').attr('lang') || 'ko'
 
   // 상단 gnb 부분
-  $.getJSON(`/inc/menu_${lang}.json`, function(data){
+  $.getJSON(`../inc/menu_${lang}.json`, function(data){
     const depth1 = data.depth1;
     const depth2 = data.depth2;
     const link = data.link;

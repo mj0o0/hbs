@@ -35,6 +35,12 @@
 @media (max-width: 1200px){
  .main .main_inner { width: 1000px; } 
  }
+
+@media (max-width: 1200px){
+ .main .main_inner { width: 1000px; } 
+ .layout { padding: 20px; } 
+ .main .sec04 .slick-slide { margin: 0 20px; } 
+ }
 @media (max-width: 1000px){
  .main .main_inner { width: calc(100% - 50px); } 
  }
@@ -319,7 +325,7 @@
 .footer_top .link_list .link_open.on::before { transform: scaleY(-1); } 
 
 .footer_top .link_list ul { visibility: hidden; position: absolute; top: 100%; left: 0; width: 100%; padding: 10px 10px; border: 1px solid transparent; border-radius: 15px; box-sizing: border-box; transition: .3s ease-in-out; opacity: 0; z-index: 20; } 
-.footer_top .link_list li a { display: block; color: #292929; font-size: 16px; font-weight: 300; line-height: 0; transition: .3s ease-in-out; transition-property: line-height, padding; } 
+.footer_top .link_list li a { display: block; color: #292929; font-size: 16px; font-weight: 300; line-height: 0px; transition: .3s ease-in-out; transition-property: line-height, padding; } 
 .footer_top .link_list li a:hover { font-weight: 600; } 
 .footer_top .link_list ul.active { visibility: visible; border-top-left-radius: 0; border-top-right-radius: 0; opacity: 1; } 
 .footer_top .link_list ul.active li a { padding: 5px 0; line-height: 22px; } 
@@ -332,7 +338,7 @@
 .footer_bottom .linkbox ul li a { color: #292929; font-weight: 700; font-size: 16px; } 
 
 .footer_bottom .corp_info { font-size: 16px; color: #292929; font-weight: 300; } 
-.footer_bottom .corp_info span { position: relative; margin-right: 20px; word-break: keep-all;} 
+.footer_bottom .corp_info span { position: relative; margin-right: 20px; word-break: keep-all; } 
 .footer_bottom .corp_info span:last-child { margin-right: 0; } 
 .footer_bottom .corp_info span::before { content: ''; display: block; position: absolute; top: calc(50% - 5px); right: -13px; width: 1px; height: 10px; background-color: #D2D2D2; } 
 .footer_bottom .corp_info span:last-child::before { display: none; } 
@@ -354,14 +360,9 @@
  .footer_bottom .linkbox ul li { width: 50%; margin-right: 0; } 
  .footer_bottom .linkbox ul li:nth-child(n+3) { margin-top: 10px; } 
 
- .footer_bottom .linkbox ul li a {font-size: 14px;}
- .footer_bottom .corp_info {font-size: 14px;}
- .footer_bottom .corp_info span {
-  display: block;
-  font-size: 14px;
+ .footer_bottom .linkbox ul li a { font-size: 14px; } 
+ .footer_bottom .corp_info { font-size: 14px; } 
+ .footer_bottom .corp_info span { display: block; font-size: 14px; } 
+ .footer_bottom .corp_info span::before { display: none; } 
  }
- .footer_bottom .corp_info span::before {
-  display: none;
- }
-}
 

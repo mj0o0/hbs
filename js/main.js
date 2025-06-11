@@ -72,7 +72,7 @@ $('.sec02 .tab_box .brand_tab').on('click',function(){
   else if (index === 5) href = `/02_product_5.html`;
   else if (index === 6) href = `/02_product_6.html`;
   else if (index === 7) href = `/02_product_7.html`;
-  $('.sec02 .linkbox a').attr('href', href)
+  $('.sec02 .linkbox a').attr('href', href);
 });
 
 // NOTICE 슬라이드

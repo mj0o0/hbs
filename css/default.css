@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block;}
 audio,canvas,progress,video{display:inline-block;}
 article,aside,audio,blockquote,body,canvas,caption,dd,details,div,dl,dt,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,iframe,legend,li,main,menu,nav,ol,p,pre,section,summary,table,tbody,td,template,textarea,tfoot,th,thead,tr,ul,video{margin:0;padding:0;border:0;font-size:inherit;font-family:inherit;box-sizing:border-box;word-break:break-all;font-family: Pretendard;font-weight: 400;}
@@ -51,3 +52,10 @@ textarea{display:block;overflow:auto;resize:vertical;}
 input[disabled]{background-color:#ebebeb;}
 select:disabled{background-color:#ebebeb;}
 [hidden]{display:none!important;}
+
+@font-face {
+  font-family: 'HealthsetBambooStd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HealthsetBambooStd.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
