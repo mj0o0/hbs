@@ -81,11 +81,11 @@
               </div>
               <div class="conbox">
                 <div class="con_title"><label for="phone">연락처</label></div>
-                <div class="con_input"><input type="text" id="email" maxlength="11" placeholder="번호를 입력해 주세요. ('-'없이 입력)"></div>
+                <div class="con_input"><input type="tel" id="phone" maxlength="11" placeholder="번호를 입력해 주세요. ('-'없이 입력)"></div>
               </div>
               <div class="conbox">
                 <div class="con_title"><label for="email">이메일</label></div>
-                <div class="con_input"><input type="text" id="email" maxlength="18" placeholder="이메일을 입력하세요"></div>
+                <div class="con_input"><input type="email" id="email"  placeholder="이메일을 입력하세요"></div>
               </div>
               <!-- 문의내용 -->
               <div class="conbox">
@@ -104,16 +104,18 @@
               <div class="conbox">
                 <div class="con_title">첨부파일</div>
                 <div class="con_input">
-                  <input class="upload-name" value="파일선택" disabled="disabled">
-                  <label for="ex-filename">파일선택</label>
+                  <input class="upload-name" value="파일선택" disabled="disabled"><label for="ex-filename">파일선택</label>
+                  <input type="file" id="ex-filename" name="ex-filename" class="upload-hidden">
                 </div>
               </div>
               <!-- //conbox -->
               <div class="privacy_agree">
-                <input type="checkbox" name="privacy" id="privacy">
+                <input type="checkbox" name="privacy" id="privacy" />
                 <div class="fake_chk">
-                  <label for="privacy"></label>
+                  <span class="label">
+                    <label for="privacy"></label>
                   <button type="button"><span>개인정보 이용 정책</span>에 동의 합니다.</button>
+                  </span>
                 </div>
                 <!-- //fake_chk -->
                 <div class="privacy_popup">
@@ -411,21 +413,21 @@
                                         </tr>
                                         <tr>
                                             <td><p>성명</p></td>
-                                            <td><p>홍길동</p></td>
-                                            <td><p>홍길동</p></td>
-                                            <td><p>홍길동</p></td>
+                                            <td><p>박민정</p></td>
+                                            <td><p>박민정</p></td>
+                                            <td><p>박민정</p></td>
                                         </tr>
                                         <tr>
                                             <td><p>담당자 연락처</p></td>
-                                            <td><p>051-328-3118</p></td>
-                                            <td><p>051-328-3118</p></td>
-                                            <td><p>051-328-3118</p></td>
+                                            <td><p>010-8256-1739</p></td>
+                                            <td><p>010-8256-1739</p></td>
+                                            <td><p>010-8256-1739</p></td>
                                         </tr>
                                         <tr>
                                             <td><p>담당자 메일주소</p></td>
-                                            <td><p>hissen@hissenmotor.com</p></td>
-                                            <td><p>hissen@hissenmotor.com</p></td>
-                                            <td><p>hissen@hissenmotor.com</p></td>
+                                            <td><p>ryen680@naver.com</p></td>
+                                            <td><p>ryen680@naver.com</p></td>
+                                            <td><p>ryen680@naver.com</p></td>
                                         </tr>
                                         </tbody>
                                     </table>

@@ -2,13 +2,12 @@
 
 .hbs_corp #sub_banner .sub_visual .visual_img { background: url(../images/sub_top_1.jpg) no-repeat bottom / cover; } 
 .hbs_brand #sub_banner .sub_visual .visual_img { background: url(../images/sub_top_2.jpg) no-repeat bottom / cover; } 
-.hbs_contactus #sub_banner .sub_visual .visual_img {
-  background: url(../images/sub_top_3.jpg)  no-repeat center  / cover;
-} 
+.hbs_contactus #sub_banner .sub_visual .visual_img {background: url(../images/sub_top_3.jpg)  no-repeat center  / cover; } 
+.hbs_notice #sub_banner .sub_visual .visual_img { background: url(../images/sub_top_4.jpg)  no-repeat center  / cover; } 
 
 #sub_banner .sub_visual .visual_img { width: 100%; height: 100%; animation: subVisual 1s reverse cubic-bezier(.47,.2,0,.85); } 
 @keyframes subVisual { to { transform: scale(1.2); } 
- }
+}
 
 
 #sub_banner { position: relative; z-index: 10; height: 480px; padding-top: 200px; color: #fff; padding-top: 240px; } 
